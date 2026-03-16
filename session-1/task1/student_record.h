@@ -11,8 +11,12 @@ struct student_record {
     float marks[NUM_MODULES]; // Marks for three modules
 };
 
+typedef struct student_record Student;
+
 /*
  * function headers
  */
-float calculate_average(struct student_record student);
-void display_student(struct student_record student);
+float calculate_average(Student student);
+void display_student(Student student);
+
+
